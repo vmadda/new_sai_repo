@@ -6,11 +6,6 @@ table financials
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Total Sales' = SUM(financials[Sales])
-		lineageTag: 852bac25-18a8-4a2d-a819-a0881dd9eae2
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column Segment
 		dataType: string
 		lineageTag: 96fe84cb-c894-4a5a-9581-6194b7a6ca56

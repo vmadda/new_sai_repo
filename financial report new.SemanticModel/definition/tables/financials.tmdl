@@ -10,7 +10,7 @@ table financials
 			
 			IF(
 				ISFILTERED('financials'[Date]),
-				ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+				ERROR("Error"),
 				TOTALYTD([Total Profit], 'financials'[Date].[Date])
 			)
 		lineageTag: 811093de-4c67-43d2-897e-84d73713f7f3
@@ -22,6 +22,17 @@ table financials
 				}
 
 		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Profit QTD' =
+			
+			IF(
+				ISFILTERED('financials'[Date]),
+				ERROR("Error"),
+				TOTALQTD([Total Profit], 'financials'[Date].[Date])
+			)
+		lineageTag: ec0d9ab1-12a8-4e06-84ad-88a7f3853592
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

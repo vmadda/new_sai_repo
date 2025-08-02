@@ -1,6 +1,11 @@
 table financials
 	lineageTag: c5d99c51-5a6c-4932-8674-3429baaa8dcf
 
+	measure 'Total Profit' = SUM(financials[Profit])
+		lineageTag: 9a7cb0bf-68eb-4643-8bb0-11e6900b243d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Segment
 		dataType: string
 		lineageTag: 96fe84cb-c894-4a5a-9581-6194b7a6ca56

@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.65\"},\"customTheme\":{\"name\":\"Copilot_Theme5322063047057551.json\",\"type\":1,\"version\":\"5.65\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.65\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.65\"},\"customTheme\":{\"name\":\"Copilot_Theme5322063047057551.json\",\"type\":1,\"version\":\"5.65\"}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -321,6 +321,27 @@
           "x": 936.00,
           "y": 420.00,
           "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9dbac0a41e577481582c",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"74e14f77ece8eb725fcd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":414.09703504043125,\"y\":0,\"width\":300,\"height\":300,\"z\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"financials.Total Profit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Profit\"},\"Name\":\"financials.Total Profit\",\"NativeReferenceName\":\"Total Profit\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 300.00,
+          "x": 414.10,
+          "y": 0.00,
+          "z": 0.00
         }
       ],
       "width": 1280.00

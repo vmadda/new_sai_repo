@@ -54,6 +54,15 @@
           "z": 2001.00
         },
         {
+          "config": "{\"name\":\"c089f54fe0308c9e08de\",\"layouts\":[{\"id\":0,\"position\":{\"x\":493.949914903963,\"y\":420.2557743739363,\"z\":2002,\"width\":786.7347434962314,\"height\":298.7600291757841}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"financials.Total Profit QTD\"}],\"Category\":[{\"queryRef\":\"financials.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"financials.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"financials.Date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Profit QTD\"},\"Name\":\"financials.Total Profit QTD\",\"NativeReferenceName\":\"Total Profit QTD\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"financials.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"financials.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"financials.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 298.76,
+          "width": 786.73,
+          "x": 493.95,
+          "y": 420.26,
+          "z": 2002.00
+        },
+        {
           "config": "{\"name\":\"f64192956f54350de9c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":548.1908824309673,\"y\":420,\"width\":353.2333718770906,\"height\":300,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(financials.new Column)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"new Column\"}},\"Function\":0},\"Name\":\"Sum(financials.new Column)\",\"NativeReferenceName\":\"Sum of new Column\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 300.00,

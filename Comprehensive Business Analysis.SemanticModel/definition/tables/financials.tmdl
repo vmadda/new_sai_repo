@@ -1,44 +1,9 @@
 table financials
-	lineageTag: 0da170f4-0f77-4486-b8db-e581756ffdc5
-
-	measure 'Total Profit' = SUM(financials[Profit])
-		lineageTag: 5e4d96bd-e582-4f3e-b307-073ce911b3ad
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Total Profit YTD' =
-			
-			IF(
-				ISFILTERED('financials'[Date]),
-				ERROR("Error"),
-				TOTALYTD([Total Profit], 'financials'[Date].[Date])
-			)
-		lineageTag: 811093de-4c67-43d2-897e-84d73713f7f3
-
-		extendedProperty MeasureTemplate =
-				{
-				  "version": 0,
-				  "daxTemplateName": "YearToDate"
-				}
-
-		changedProperty = FormatString
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Total Profit QTD' =
-			
-			IF(
-				ISFILTERED('financials'[Date]),
-				ERROR("Error"),
-				TOTALQTD([Total Profit], 'financials'[Date].[Date])
-			)
-		lineageTag: ec0d9ab1-12a8-4e06-84ad-88a7f3853592
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	lineageTag: c5d99c51-5a6c-4932-8674-3429baaa8dcf
 
 	column Segment
 		dataType: string
-		lineageTag: 1189122b-8371-4f0f-b228-83611876ede8
+		lineageTag: 96fe84cb-c894-4a5a-9581-6194b7a6ca56
 		summarizeBy: none
 		sourceColumn: Segment
 
@@ -46,7 +11,7 @@ table financials
 
 	column Country
 		dataType: string
-		lineageTag: 2ccd851b-452c-40dd-bced-b70ff4b7da9b
+		lineageTag: 442c1254-c1c1-4623-9c97-491f0635d7fe
 		summarizeBy: none
 		sourceColumn: Country
 
@@ -54,7 +19,7 @@ table financials
 
 	column Product
 		dataType: string
-		lineageTag: d640f877-6dd3-4c4f-aa93-742b55c5f85e
+		lineageTag: b4ea47cf-bbb9-4a00-865d-133de4f7f5da
 		summarizeBy: none
 		sourceColumn: Product
 
@@ -62,7 +27,7 @@ table financials
 
 	column 'Discount Band'
 		dataType: string
-		lineageTag: e3ab96ad-a0c7-40bb-848c-05f97b91416e
+		lineageTag: a5ec6b7f-e1a9-408c-89ee-1cec896e003b
 		summarizeBy: none
 		sourceColumn: Discount Band
 
@@ -70,7 +35,7 @@ table financials
 
 	column 'Units Sold'
 		dataType: double
-		lineageTag: 3de6f9b4-3118-41a9-a129-0ecf7f560c0f
+		lineageTag: 30950798-deb2-4abf-8b15-c1167427f077
 		summarizeBy: sum
 		sourceColumn: Units Sold
 
@@ -81,7 +46,7 @@ table financials
 	column 'Manufacturing Price'
 		dataType: int64
 		formatString: 0
-		lineageTag: c7354431-f490-40fd-b214-b6c7187e0c0d
+		lineageTag: d902d37a-da73-4e1a-bca0-c2c0fd8efb21
 		summarizeBy: sum
 		sourceColumn: Manufacturing Price
 
@@ -90,7 +55,7 @@ table financials
 	column 'Sale Price'
 		dataType: int64
 		formatString: 0
-		lineageTag: e9e40f60-060d-4680-b24a-e25ace97bc28
+		lineageTag: feca7981-e726-45c2-9f5d-34e9a2614b83
 		summarizeBy: sum
 		sourceColumn: Sale Price
 
@@ -98,7 +63,7 @@ table financials
 
 	column 'Gross Sales'
 		dataType: double
-		lineageTag: 35ff797c-ab0b-4ac7-9a05-2fa0518e6220
+		lineageTag: 3efb7005-e379-4fb5-951f-6bc698fffd2a
 		summarizeBy: sum
 		sourceColumn: Gross Sales
 
@@ -108,7 +73,7 @@ table financials
 
 	column Discounts
 		dataType: double
-		lineageTag: 3ad3713e-b2b4-408a-96cf-46e60f9ede91
+		lineageTag: f8038c1d-6404-407b-a738-b8b70b6c7f00
 		summarizeBy: sum
 		sourceColumn: Discounts
 
@@ -118,7 +83,7 @@ table financials
 
 	column Sales
 		dataType: double
-		lineageTag: d4729627-4cbb-4123-9464-2be33244134f
+		lineageTag: d9b76ebb-ccc3-45c6-85a1-cd84110fb65f
 		summarizeBy: sum
 		sourceColumn: Sales
 
@@ -128,7 +93,7 @@ table financials
 
 	column COGS
 		dataType: double
-		lineageTag: bc0ccff9-f04f-4ff7-b1ec-d2ff78f894a7
+		lineageTag: 7c1c8e24-b0ad-41f2-a7ca-94aeaff57463
 		summarizeBy: sum
 		sourceColumn: COGS
 
@@ -138,7 +103,7 @@ table financials
 
 	column Profit
 		dataType: double
-		lineageTag: 0fa8d65c-b32f-4837-84b2-f5e25bc2db39
+		lineageTag: 5badbc70-01dd-4751-8f19-90b8216a7b4b
 		summarizeBy: sum
 		sourceColumn: Profit
 
@@ -149,14 +114,9 @@ table financials
 	column Date
 		dataType: dateTime
 		formatString: Long Date
-		lineageTag: b6628c7c-23a3-4b13-ad42-2dc0d6f708c7
+		lineageTag: 92b8335d-2640-4d58-a80b-ce212fcde107
 		summarizeBy: none
 		sourceColumn: Date
-
-		variation Variation
-			isDefault
-			relationship: 0ed35dc3-4b7b-40ad-8cab-485c9854cccd
-			defaultHierarchy: LocalDateTable_b4f9c290-b568-4d8d-ba69-4d989fafb575.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -165,7 +125,7 @@ table financials
 	column 'Month Number'
 		dataType: int64
 		formatString: 0
-		lineageTag: b28fa509-97ee-4eb7-b714-44b60fdbb7d7
+		lineageTag: 88ba3d5c-ed2e-4c58-9894-6ddbf9c9f197
 		summarizeBy: sum
 		sourceColumn: Month Number
 
@@ -173,7 +133,7 @@ table financials
 
 	column 'Month Name'
 		dataType: string
-		lineageTag: 202596e0-e3f8-4284-85e6-00a405fb7841
+		lineageTag: 7379dc7a-a3b8-4ff7-a550-4526a8cc6dcb
 		summarizeBy: none
 		sourceColumn: Month Name
 
@@ -182,19 +142,11 @@ table financials
 	column Year
 		dataType: int64
 		formatString: 0
-		lineageTag: ffa2e6a4-879a-46a4-b1ee-77415524f82c
+		lineageTag: 54331c42-70fd-4b83-a9d7-f22e05028d12
 		summarizeBy: sum
 		sourceColumn: Year
 
 		annotation SummarizationSetBy = Automatic
-
-	column 'new Column' = financials[Units Sold]*financials[Manufacturing Price]
-		lineageTag: 1ac0e092-c0d6-4f91-8ab9-9a945d0ab014
-		summarizeBy: sum
-
-		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition financials = m
 		mode: import

@@ -6,6 +6,44 @@ table financials
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Total Profit YTD' =
+			
+			IF(
+				ISFILTERED('financials'[Date]),
+				ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+				TOTALYTD([Total Profit], 'financials'[Date].[Date])
+			)
+		lineageTag: 811093de-4c67-43d2-897e-84d73713f7f3
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "YearToDate"
+				}
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Profit YTD 2' =
+			
+			IF(
+				ISFILTERED('financials'[Date]),
+				ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+				TOTALYTD([Total Profit], 'financials'[Date].[Date])
+			)
+		lineageTag: 1127ae01-72fc-409a-8336-d9b66f53de1b
+
+		extendedProperty MeasureTemplate =
+				{
+				  "version": 0,
+				  "daxTemplateName": "YearToDate"
+				}
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Segment
 		dataType: string
 		lineageTag: 1189122b-8371-4f0f-b228-83611876ede8

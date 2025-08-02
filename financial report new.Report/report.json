@@ -45,6 +45,15 @@
           "z": 0.00
         },
         {
+          "config": "{\"name\":\"6e3d92c6e6edb0b94c02\",\"layouts\":[{\"id\":0,\"position\":{\"x\":924.6773773529527,\"y\":52.913792705714094,\"width\":355.3226226470473,\"height\":355.27832245265176,\"z\":2001}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"financials.Total Profit YTD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Total Profit YTD\"},\"Name\":\"financials.Total Profit YTD\",\"NativeReferenceName\":\"Total Profit YTD\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 355.28,
+          "width": 355.32,
+          "x": 924.68,
+          "y": 52.91,
+          "z": 2001.00
+        },
+        {
           "config": "{\"name\":\"f64192956f54350de9c7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":548.1908824309673,\"y\":420,\"width\":353.2333718770906,\"height\":300,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(financials.new Column)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"new Column\"}},\"Function\":0},\"Name\":\"Sum(financials.new Column)\",\"NativeReferenceName\":\"Sum of new Column\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
           "height": 300.00,

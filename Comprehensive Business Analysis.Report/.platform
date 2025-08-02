@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Comprehensive Business Analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "984f975e-b4a6-46bd-a99c-0c0bd5e7f2da"
+  }
+}
